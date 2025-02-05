@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Travel Recommendations</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="travel_recommendation.css">
     <link rel="stylesheet" href="about.html">
     <link rel="stylesheet" href="contact.html">
+    <!-- Link to JavaScript file that contains functionality -->
     <script src="travel_recommendation.js" defer></script>
 </head>
 <body>
+    <!-- Navigation bar with logo and menu links -->
     <nav class="navbar-css">
         <div class="logo">
+            <!-- Logo image and the link to the homepage -->
             <img src="/image/travel_logo.png" alt="Logo">
             <a href="travel_recommendation.html">Travel Recommender</a>
         </div>
         <div class="navbar" style="padding-right: 45%;">
+            <!-- Navigation links to Home, About Us, and Contact Us pages -->
             <a href="travel_recommendation.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
@@ -24,38 +29,46 @@
 
     <!-- Contact Us Section -->
     <div class="contact-content">
+        <!-- Contact text area with title and message -->
         <div class="contact-text">
             <h1>CONTACT US</h1>
             <p>If you have any questions or suggestions, feel free to reach out to us!</p>
         </div>
+
+        <!-- Contact form with fields for name, email, and message -->
         <form class="contact-form">
+            <!-- Name input field -->
             <label for="name">Name</label>
             <br>
             <input type="text" id="name" name="name" required>
             <br>
 
+            <!-- Email input field -->
             <label for="email">Email</label>
             <br>
             <input type="email" id="email" name="email" required>
             <br>
 
+            <!-- Message textarea field -->
             <label for="message">Message</label>
             <br>
             <textarea id="message" name="message" rows="4" required></textarea>
     
+            <!-- Submit button for the form -->
             <button type="submit">Send</button>
         </form>
     </div>
-    
 
-    <!-- Social icons placed in the bottom-left corner -->
+    <!-- Social media icons in the bottom-left corner -->
     <div class="social-icons">
+        <!-- Links to social media profiles with corresponding icons -->
         <a href="#"><img src="/image/facebook_logo.png" alt="Facebook"></a>
         <a href="#"><img src="/image/twitter_logo.png" alt="Twitter"></a>
         <a href="#"><img src="/image/instagram_logo.png" alt="Instagram"></a>
         <a href="#"><img src="/image/youtube_logo.png" alt="YouTube"></a>
     </div>
 
+    <!-- Link to JavaScript file again for any other functionalities -->
     <script src="travel_recommendation.js"></script>
 </body>
 </html>

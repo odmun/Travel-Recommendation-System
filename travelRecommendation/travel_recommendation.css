@@ -15,14 +15,12 @@ body {
     position: relative;
 }
 
-/* Navigation links */
 .navbar-css a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
 
-/* Logo styling */
 .logo {
     display: flex;
     align-items: center;
@@ -34,7 +32,6 @@ body {
     margin-right: 10px;
 }
 
-/* Search container */
 .search-container {
     display: inline-flex;
     align-items: center;
@@ -44,7 +41,6 @@ body {
     overflow: hidden;
 }
 
-/* Search input */
 .search-container input {
     border: none;
     padding: 8px 12px;
@@ -52,7 +48,6 @@ body {
     font-size: 14px;
 }
 
-/* Search icon */
 .search-container .search-icon {
     display: flex;
     align-items: center;
@@ -62,7 +57,6 @@ body {
     background: white;
 }
 
-/* Search buttons */
 .search-container button {
     border: none;
     background: #f1f1f1;
@@ -76,38 +70,33 @@ body {
     background: #e0e0e0;
 }
 
-/* Introduction section */
 .home-content {
     max-width: 700px;
-    margin: 130px auto 0 300px; /* Moved even further to the right */
+    margin: 130px auto 0 300px;
     color: white;
     text-align: left;
 }
 
-/* Heading */
 .home-content h1 {
-    font-size: 65px; /* Increased font size */
+    font-size: 65px;
     font-weight: bold;
-    margin-bottom: 130px; /* Increased spacing below the heading */
+    margin-bottom: 130px;
 }
 
-/* Paragraph */
 .home-content p {
     font-size: 20px;
     line-height: 1.8;
 }
 
-/* Social icons positioned in the bottom-left corner */
 .social-icons {
     position: fixed;
-    left: 40px;  /* Adjusted left margin */
-    bottom: 140px; /* More spacing from the bottom */
+    left: 40px;
+    bottom: 140px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-/* Social icons size */
 .social-icons img {
     height: auto;
 }
@@ -122,42 +111,36 @@ body {
     width: 38px;
 }
 
-/* About Us Page */
 .about-content {
     max-width: 800px;
-    margin: 120px auto 0 180px; /* Positioned similarly to the home page */
+    margin: 120px auto 0 180px;
     color: white;
     text-align: left;
 }
 
-/* About Us heading */
 .about-content h1 {
     font-size: 55px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* About Us heading */
 .about-content h2 {
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 1px;
 }
 
-/* About Us paragraph */
 .about-content p {
     font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 40px; /* Space before team section */
+    margin-bottom: 40px;
 }
 
-/* Team members section */
 .team-members {
     display: flex;
     gap: 40px;
 }
 
-/* Team members section */
 .team-member {
     background-color: rgba(0, 0, 0, 0.35);
     padding: 20px;
@@ -181,65 +164,58 @@ body {
 
 .team-member h3 {
     font-size: 22px;
-    margin-top: 10px;  /* Ajusta el espacio entre la imagen y el nombre */
+    margin-top: 10px;
 }
 
 .team-member p {
     font-size: 16px;
 }
 
-/* Estilo para los enlaces dentro de los miembros */
 .team-member a {
-    font-family: 'Poppins', sans-serif; /* Aplicar la fuente correctamente */
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #fff;
     margin-bottom: 10px;
-    text-decoration: none; /* Elimina subrayado */
-    
+    text-decoration: none;
 }
 
-
-/* Para los párrafos dentro de .about-content */
 .about-content p {
-    background-color: rgba(0, 0, 0, 0.35);  /* Fondo oscuro con transparencia */
-    padding: 10px;  /* Margen alrededor del texto */
-    border-radius: 5px;  /* Bordes redondeados (opcional) */
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    border-radius: 5px;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 40px;
-    color: white;  /* Asegurarse de que el texto sea blanco */
+    color: white;
 }
 
-/* Para cada miembro del equipo */
 .team-member {
-    background-color: rgba(0, 0, 0, 0.35);  /* Fondo oscuro con transparencia */
-    padding: 10px;  /* Margen alrededor del contenido del miembro */
-    border-radius: 10px;  /* Bordes redondeados (opcional) */
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
-    margin-top: 50px;  /* Espacio entre miembros */
+    margin-top: 50px;
 }
 
-/* Para las imágenes de los miembros */
 .team-member img {
     width: 90px;
     height: 90px;
-    border-radius: 50%;  /* Imagen redonda */
+    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;  /* Espacio entre la imagen y el nombre */
+    margin-bottom: 15px;
 }
 
-/* Contact Us Page */
 .contact-content {
     display: flex;
     margin-right: 30px;
     justify-content: space-between;
-    align-items: flex-start; /* Asegura que ambos elementos se alineen al principio */
-    gap: 20px; /* Añade espacio entre el contenido y el formulario */
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .contact-text {
-    max-width: 45%; /* Controlamos el tamaño del contenido de texto */
-    flex-shrink: 0;  /* Evita que se reduzca */
+    max-width: 45%;
+    flex-shrink: 0;
 }
 
 .contact-form {
@@ -254,7 +230,6 @@ body {
     margin-left: 40px;
     align-self: flex-end;
 }
-
 
 .contact-form label {
     margin-top: 10px;
@@ -271,7 +246,7 @@ body {
     border-radius: 5px;
     color: white;
     font-size: 18px;
-    margin-right: 100 px;
+    margin-right: 100px;
 }
 
 .contact-content h1 {
@@ -279,7 +254,6 @@ body {
     font-weight: bold;
     margin-top: 200px;
     margin-left: 300px;
-    
     color: white;
 }
 
@@ -295,7 +269,7 @@ body {
     resize: vertical;
     min-height: 150px;
     max-height: 300px;
-    overflow-y: auto;  /* Activa el scroll si es necesario */
+    overflow-y: auto;
 }
 
 .contact-form button {
@@ -308,7 +282,6 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-
 
 .search-results {
     position: absolute;
@@ -328,20 +301,18 @@ body {
 
 .result-item {
     display: flex;
-    flex-direction: column; /* Apilar los elementos verticalmente */
+    flex-direction: column;
     padding: 15px;
     border-bottom: 1px solid #eee;
     transition: background 0.3s;
 }
 
-
-
 .result-item img {
-    width: 650px; /* Ajustar el ancho al contenedor */
-    height: 500px; /* Ajusta la altura según sea necesario */
+    width: 650px;
+    height: 500px;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+    margin-bottom: 10px;
 }
 
 .result-info h3 {
@@ -358,25 +329,22 @@ body {
 }
 
 .result-info {
-    border: 1px solid #00000000; /* Borde negro de 2px */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados opcionales */
+    border: 1px solid #00000000;
+    padding: 10px;
+    border-radius: 5px;
     background-color: #666666a8;
-    display: inline-block; /* Para ajustar el tamaño al contenido */
+    display: inline-block;
 }
 
 .visit-btn {
     background-color: #e0d1d1 !important;
     color: #000000;
     font-weight: bold;
-    padding: 5px 10px; /* Espaciado compacto */
+    padding: 5px 10px;
     font-size: 1em;
     cursor: pointer;
     border-radius: 3px;
     display: inline-block;
-    width: fit-content; /* Ajusta el ancho al texto */
-    min-width: auto; /* Evita que se expanda innecesariamente */
+    width: fit-content;
+    min-width: auto;
 }
-
-
-

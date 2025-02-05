@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Recommendations</title>
+    
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>RoamRadar</title>
+    
+    <!-- Link to external CSS files for styling -->
     <link rel="stylesheet" href="travel_recommendation.css">
-    <link rel="stylesheet" href="about.html">
-    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="about.html"> <!-- This link should be for a stylesheet, not an HTML file -->
+    <link rel="stylesheet" href="contact.html"> <!-- This link should also be for a stylesheet -->
+    
+    <!-- Google Fonts link for the Poppins font family -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- External JavaScript file for functionality -->
     <script src="travel_recommendation.js" defer></script>
 </head>
 <body>
+    <!-- Navigation bar containing logo and links to other pages -->
     <nav class="navbar-css">
         <div class="logo">
+            <!-- Logo image with alt text for accessibility -->
             <img src="/image/travel_logo.png" alt="Logo">
-            <a href="travel_recommendation.html">Travel Recommender</a>
+            <!-- Link to the homepage -->
+            <a href="travel_recommendation.html">RoamRadar</a>
         </div>
         <div class="navbar">
+            <!-- Navigation links to different sections of the site -->
             <a href="travel_recommendation.html">Home</a>
-            <a href="about.html">About Us</a> <!-- Enlace corregido -->
-            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a> <!-- Link to the About Us page -->
+            <a href="contact.html">Contact Us</a> <!-- Link to the Contact Us page -->
         </div>
         <div class="search-container">
+            <!-- Search input field to search travel recommendations -->
             <input type="text" id="search-input" placeholder="Search recommendations...">
+            <!-- Search icon next to the input field -->
             <span class="search-icon">🔍</span>
+            <!-- Search button to trigger search functionality -->
             <button id="search-btn">Search</button>
+            <!-- Reset button to clear the search input -->
             <button type="reset" id="reset-btn">Reset</button>
         </div>
     </nav>
 
-    <!-- Introduction section -->
+    <!-- Introduction section to greet the users and describe the platform -->
     <div class="home-content">
         <h1>Plan Your Next Adventure</h1>
+        <!-- Brief description of what the site offers -->
         <p>Explore the world with expert travel recommendations tailored just for you.  
            Whether you're looking for breathtaking landscapes, cultural experiences, or  
            hidden gems, our platform helps you discover the best destinations and travel tips.</p>
     </div>
 
-    <!-- Social icons placed in the bottom-left corner -->
+    <!-- Social media icons for users to connect with the platform -->
     <div class="social-icons">
-        <a href="#"><img src="/image/facebook_logo.png" alt="Facebook"></a>
-        <a href="#"><img src="/image/twitter_logo.png" alt="Twitter"></a>
-        <a href="#"><img src="/image/instagram_logo.png" alt="Instagram"></a>
-        <a href="#"><img src="/image/youtube_logo.png" alt="YouTube"></a>
+        <a href="#"><img src="/image/facebook_logo.png" alt="Facebook"></a> <!-- Link to Facebook -->
+        <a href="#"><img src="/image/twitter_logo.png" alt="Twitter"></a> <!-- Link to Twitter -->
+        <a href="#"><img src="/image/instagram_logo.png" alt="Instagram"></a> <!-- Link to Instagram -->
+        <a href="#"><img src="/image/youtube_logo.png" alt="YouTube"></a> <!-- Link to YouTube -->
     </div>
 </body>
 </html>

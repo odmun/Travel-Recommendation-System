@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Verificar si estamos en la página "About Us"
+    // Check if we are on the "About Us" page
     const aboutSection = document.querySelector(".about-content");
 
-    // Resaltar el enlace activo en la barra de navegación
+    // Highlight the active link in the navigation bar
     const navLinks = document.querySelectorAll(".navbar a");
     navLinks.forEach(link => {
         if (window.location.href.includes(link.getAttribute("href"))) {
@@ -11,15 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-
-
+    // Animate home section on page load
     const homeSection = document.querySelector(".home-content");
     if (homeSection) {
-        // Aplicar estilos iniciales para la animación
         homeSection.style.opacity = "0";
         homeSection.style.transform = "translateY(50px)";
-
-        // Agregar un pequeño retardo antes de iniciar la animación
         setTimeout(() => {
             homeSection.style.transition = "opacity 1s ease, transform 1s ease";
             homeSection.style.opacity = "1";
@@ -27,12 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 300);
     }
 
+    // Animate about section on page load
     if (aboutSection) {
-        // Aplicar estilos iniciales para la animación
         aboutSection.style.opacity = "0";
         aboutSection.style.transform = "translateY(50px)";
-
-        // Agregar un pequeño retardo antes de iniciar la animación
         setTimeout(() => {
             aboutSection.style.transition = "opacity 1s ease, transform 1s ease";
             aboutSection.style.opacity = "1";
@@ -40,15 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 300);
     }
 
-
-
+    // Animate contact section on page load
     const contactSection = document.querySelector(".contact-content");
     if (contactSection) {
-        // Aplicar estilos iniciales para la animación
         contactSection.style.opacity = "0";
         contactSection.style.transform = "translateY(50px)";
-
-        // Agregar un pequeño retardo antes de iniciar la animación
         setTimeout(() => {
             contactSection.style.transition = "opacity 1s ease, transform 1s ease";
             contactSection.style.opacity = "1";
@@ -56,23 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 300);
     }
 
-    if (contactSection) {
-        // Aplicar estilos iniciales para la animación
-        contactSection.style.opacity = "0";
-        contactSection.style.transform = "translateY(50px)";
-
-        // Agregar un pequeño retardo antes de iniciar la animación
-        setTimeout(() => {
-            contactSection.style.transition = "opacity 1s ease, transform 1s ease";
-            contactSection.style.opacity = "1";
-            contactSection.style.transform = "translateY(0)";
-        }, 300);
-    }
-
-
-
-
-
+    // Create a container for the search results
     const searchInput = document.querySelector('.search-container input');
     const searchBtn = document.querySelector('.search-container button');
     const resultsContainer = document.createElement('div');
@@ -80,59 +54,59 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.search-container').appendChild(resultsContainer);
     
     let travelData = {};
-    
-    // Cargar el archivo JSON
+
+    // Load the JSON file with travel data
     fetch('travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
             travelData = data;
-            console.log('Datos cargados:', travelData); // Verificación
+            console.log('Loaded data:', travelData); // Verification
         })
         .catch(error => console.error('Error loading data:', error));
-    
-    // Evento de búsqueda
+
+    // Search event listener
     searchBtn.addEventListener('click', function() {
         const keyword = searchInput.value.trim().toLowerCase();
-        resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+        resultsContainer.innerHTML = ''; // Clear previous results
         
         let recommendations = [];
-    
-        // Si la palabra clave es vacía, no hacer nada
+        
+        // If the keyword is empty, do nothing
         if (keyword === '') {
-            resultsContainer.style.display = 'none'; // No mostrar si no hay palabra clave
+            resultsContainer.style.display = 'none'; // Do not show results if no keyword
             return;
         }
-    
-        // Buscar coincidencias para países (Australia, Japan, Brazil, etc.)
+
+        // Search for matches in countries (Australia, Japan, Brazil, etc.)
         const countryMatch = travelData.countries.filter(country =>
             country.name.toLowerCase().includes(keyword)
         );
-    
-        // Si hay coincidencias de países, buscar las ciudades de esos países
+
+        // If there are country matches, search the cities within those countries
         if (countryMatch.length > 0) {
             countryMatch.forEach(country => {
                 recommendations = recommendations.concat(country.cities);
             });
         }
-    
-        // Buscar coincidencias en templos
+
+        // Search for matches in temples
         if (keyword === 'temples' || keyword === 'templo') {
             recommendations = recommendations.concat(travelData.temples);
         }
-    
-        // Buscar coincidencias en playas
+
+        // Search for matches in beaches
         if (keyword === 'beaches' || keyword === 'playa') {
             recommendations = recommendations.concat(travelData.beaches);
         }
-    
-        // Si no se encuentra ninguna coincidencia, mostrar mensaje
+
+        // If no matches are found, show a message
         if (recommendations.length === 0) {
-            resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
+            resultsContainer.innerHTML = '<p>No results found.</p>';
             resultsContainer.style.display = 'block';
             return;
         }
-    
-        // Mostrar los resultados
+
+        // Display the results
         recommendations.forEach(item => {
             const resultItem = document.createElement('div');
             resultItem.className = 'result-item';
@@ -150,24 +124,20 @@ document.addEventListener("DOMContentLoaded", function () {
             
             resultsContainer.appendChild(resultItem);
         });
-    
+
         resultsContainer.style.display = 'block';
     });
-    
-    // Cerrar resultados al hacer click fuera
+
+    // Close the search results when clicking outside
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.search-container')) {
             resultsContainer.style.display = 'none';
         }
     });
-    
-    
+
+    // Clear search input and results when reset button is clicked
     document.getElementById('reset-btn').addEventListener('click', function() {
-    document.getElementById('search-input').value = ''; // Borra el texto del input
-    document.querySelector('.search-results').innerHTML = ''; // Borra los resultados
+        document.getElementById('search-input').value = ''; // Clear input field
+        document.querySelector('.search-results').innerHTML = ''; // Clear results
+    });
 });
-
-});
-
-
-
