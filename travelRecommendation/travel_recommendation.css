@@ -1,0 +1,382 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/image/travel_home.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar-css {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation links */
+.navbar-css a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Search container */
+.search-container {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* Search input */
+.search-container input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Search icon */
+.search-container .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 16px;
+    background: white;
+}
+
+/* Search buttons */
+.search-container button {
+    border: none;
+    background: #f1f1f1;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-container button:hover {
+    background: #e0e0e0;
+}
+
+/* Introduction section */
+.home-content {
+    max-width: 700px;
+    margin: 130px auto 0 300px; /* Moved even further to the right */
+    color: white;
+    text-align: left;
+}
+
+/* Heading */
+.home-content h1 {
+    font-size: 65px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 130px; /* Increased spacing below the heading */
+}
+
+/* Paragraph */
+.home-content p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Social icons positioned in the bottom-left corner */
+.social-icons {
+    position: fixed;
+    left: 40px;  /* Adjusted left margin */
+    bottom: 140px; /* More spacing from the bottom */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Social icons size */
+.social-icons img {
+    height: auto;
+}
+
+.social-icons img[alt="Facebook"] {
+    width: 30px;
+}
+
+.social-icons img[alt="Twitter"],
+.social-icons img[alt="Instagram"],
+.social-icons img[alt="YouTube"] {
+    width: 38px;
+}
+
+/* About Us Page */
+.about-content {
+    max-width: 800px;
+    margin: 120px auto 0 180px; /* Positioned similarly to the home page */
+    color: white;
+    text-align: left;
+}
+
+/* About Us heading */
+.about-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* About Us heading */
+.about-content h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+/* About Us paragraph */
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px; /* Space before team section */
+}
+
+/* Team members section */
+.team-members {
+    display: flex;
+    gap: 40px;
+}
+
+/* Team members section */
+.team-member {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    margin-top: 10px;  /* Ajusta el espacio entre la imagen y el nombre */
+}
+
+.team-member p {
+    font-size: 16px;
+}
+
+/* Estilo para los enlaces dentro de los miembros */
+.team-member a {
+    font-family: 'Poppins', sans-serif; /* Aplicar la fuente correctamente */
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none; /* Elimina subrayado */
+    
+}
+
+
+/* Para los párrafos dentro de .about-content */
+.about-content p {
+    background-color: rgba(0, 0, 0, 0.35);  /* Fondo oscuro con transparencia */
+    padding: 10px;  /* Margen alrededor del texto */
+    border-radius: 5px;  /* Bordes redondeados (opcional) */
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: white;  /* Asegurarse de que el texto sea blanco */
+}
+
+/* Para cada miembro del equipo */
+.team-member {
+    background-color: rgba(0, 0, 0, 0.35);  /* Fondo oscuro con transparencia */
+    padding: 10px;  /* Margen alrededor del contenido del miembro */
+    border-radius: 10px;  /* Bordes redondeados (opcional) */
+    text-align: center;
+    margin-top: 50px;  /* Espacio entre miembros */
+}
+
+/* Para las imágenes de los miembros */
+.team-member img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;  /* Imagen redonda */
+    object-fit: cover;
+    margin-bottom: 15px;  /* Espacio entre la imagen y el nombre */
+}
+
+/* Contact Us Page */
+.contact-content {
+    display: flex;
+    margin-right: 30px;
+    justify-content: space-between;
+    align-items: flex-start; /* Asegura que ambos elementos se alineen al principio */
+    gap: 20px; /* Añade espacio entre el contenido y el formulario */
+}
+
+.contact-text {
+    max-width: 45%; /* Controlamos el tamaño del contenido de texto */
+    flex-shrink: 0;  /* Evita que se reduzca */
+}
+
+.contact-form {
+    width: 50%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 60px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    margin-left: 40px;
+    align-self: flex-end;
+}
+
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-right: 100 px;
+}
+
+.contact-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-left: 300px;
+    
+    color: white;
+}
+
+.contact-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: white;
+    margin-left: 300px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;  /* Activa el scroll si es necesario */
+}
+
+.contact-form button {
+    margin: 15px 10px 0 10px;
+    padding: 12px;
+    background-color: #5f5a57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 1;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-height: 800px;
+    max-width: 700px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.result-item {
+    display: flex;
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s;
+}
+
+
+
+.result-item img {
+    width: 650px; /* Ajustar el ancho al contenedor */
+    height: 500px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+.result-info h3 {
+    margin: 0 0 5px 0;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.result-info p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.result-info {
+    border: 1px solid #00000000; /* Borde negro de 2px */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    background-color: #666666a8;
+    display: inline-block; /* Para ajustar el tamaño al contenido */
+}
+
+.visit-btn {
+    background-color: #e0d1d1 !important;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 10px; /* Espaciado compacto */
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+    width: fit-content; /* Ajusta el ancho al texto */
+    min-width: auto; /* Evita que se expanda innecesariamente */
+}
+
+
+

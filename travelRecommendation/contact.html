@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Recommendations</title>
+    <title>Contact Us - Travel Recommendations</title>
     <link rel="stylesheet" href="travel_recommendation.css">
     <link rel="stylesheet" href="about.html">
     <link rel="stylesheet" href="contact.html">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="travel_recommendation.js" defer></script>
 </head>
 <body>
@@ -16,26 +15,38 @@
             <img src="/image/travel_logo.png" alt="Logo">
             <a href="travel_recommendation.html">Travel Recommender</a>
         </div>
-        <div class="navbar">
+        <div class="navbar" style="padding-right: 45%;">
             <a href="travel_recommendation.html">Home</a>
-            <a href="about.html">About Us</a> <!-- Enlace corregido -->
+            <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
-        </div>
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search recommendations...">
-            <span class="search-icon">🔍</span>
-            <button id="search-btn">Search</button>
-            <button type="reset" id="reset-btn">Reset</button>
         </div>
     </nav>
 
-    <!-- Introduction section -->
-    <div class="home-content">
-        <h1>Plan Your Next Adventure</h1>
-        <p>Explore the world with expert travel recommendations tailored just for you.  
-           Whether you're looking for breathtaking landscapes, cultural experiences, or  
-           hidden gems, our platform helps you discover the best destinations and travel tips.</p>
+    <!-- Contact Us Section -->
+    <div class="contact-content">
+        <div class="contact-text">
+            <h1>CONTACT US</h1>
+            <p>If you have any questions or suggestions, feel free to reach out to us!</p>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
     </div>
+    
 
     <!-- Social icons placed in the bottom-left corner -->
     <div class="social-icons">
@@ -44,5 +55,7 @@
         <a href="#"><img src="/image/instagram_logo.png" alt="Instagram"></a>
         <a href="#"><img src="/image/youtube_logo.png" alt="YouTube"></a>
     </div>
+
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
