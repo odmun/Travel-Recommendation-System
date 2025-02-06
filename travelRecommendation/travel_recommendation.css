@@ -111,6 +111,29 @@ body {
     width: 38px;
 }
 
+#facebook_logo {
+    background: url('../image/facebook_logo.PNG') no-repeat center center;
+
+  }
+  
+  #twitter_logo {
+    background: url('../image/twitter_logo.PNG') no-repeat center center;
+ 
+  }
+  
+  #instagram_logo {
+    background: url('../image/instagram_logo.PNG') no-repeat center center;
+
+  }
+  
+  #youtube_logo {
+    background: url('../image/youtube_logo.PNG') no-repeat center center;
+    height: 38px;
+    width: 38px;    
+
+  }
+  
+
 .about-content {
     max-width: 800px;
     margin: 120px auto 0 180px;
