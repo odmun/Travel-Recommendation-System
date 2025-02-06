@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('travel_home.jpg') no-repeat center center fixed;
+    background: url('/image/travel_home.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
